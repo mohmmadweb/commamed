@@ -23,8 +23,8 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "کامامد", "alternateName": ["Comma Med", "شرکت آینده سلامت الکترونیک شریف"], "url": "https://commamed.com/", "logo": "https://commamed.com/logo.png", "email": "info@commamed.com", "sameAs": ["https://instagram.com/commamed.ir"], "address": {"@type": "PostalAddress", "addressLocality": "تهران", "addressCountry": "IR", "postalCode": "1458889646", "streetAddress": "خیابان آزادی، دانشگاه صنعتی شریف، ساختمان شهید ستاری، طبقه ۶، واحد ۶۱۶"}}</script>
 <style>
 @font-face{font-family:Vazirmatn;src:url(fonts/Vazirmatn.woff2) format("woff2");font-weight:100 900;font-display:swap}
-:root{--ink:#0a1822;--deep:#4b6a7d;--mist:#93b0c0;--pale:#eef5f8;--paper:#fbfdfe;--roi:#e5384b;--text:#16262f;--card:#fff;--line:#c9d9e1}
-@media(prefers-color-scheme:dark){:root{--paper:#0e1f2a;--pale:#12293a;--text:#dbe8ee;--card:#16313f;--line:#2c4a5a;--deep:#93b0c0}}
+:root{--roit:#cf2c40;--ink:#0a1822;--deep:#4b6a7d;--mist:#93b0c0;--pale:#eef5f8;--paper:#fbfdfe;--roi:#e5384b;--text:#16262f;--card:#fff;--line:#c9d9e1}
+@media(prefers-color-scheme:dark){:root{--roit:#ff6b7c;--paper:#0e1f2a;--pale:#12293a;--text:#dbe8ee;--card:#16313f;--line:#2c4a5a;--deep:#93b0c0}}
 *{box-sizing:border-box;margin:0;min-width:0}
 html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
 body{font-family:Vazirmatn,Tahoma,sans-serif;font-weight:300;background:var(--paper);color:var(--text);line-height:2;overflow-x:hidden;font-size:clamp(.95rem,.9rem + .25vw,1.05rem)}
@@ -69,9 +69,10 @@ h3{font-weight:700;font-size:1.1rem;line-height:1.7;margin:0 0 .5rem}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.3rem 1.4rem}
 .dark .card{background:#12293a;border-color:#2c4a5a}
 .card ul,.cols ul{padding-inline-start:1.2rem}li{margin-bottom:.35rem}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:1.8rem 1.2rem;margin-top:2rem}
-.stat .num{font-size:clamp(2rem,6vw,3.3rem);font-weight:100;color:var(--deep);line-height:1.3;max-width:100%}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:1.8rem 1.2rem;margin-top:2rem}
+.stat .num{font-size:clamp(1.55rem,6.6vw,3.3rem);font-weight:200;color:var(--deep);line-height:1.3;max-width:100%;font-variant-numeric:proportional-nums;letter-spacing:-.01em}
 .dark .stat .num{color:var(--mist)}
+html[dir=rtl] .stat .num{text-align:right}
 .stat span{display:block;font-size:.9rem;line-height:1.8}
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));margin-top:2rem;border-top:2px solid var(--deep);gap:0}
 .steps div{padding:1.2rem 1rem 0 0;position:relative}
@@ -80,7 +81,7 @@ h3{font-weight:700;font-size:1.1rem;line-height:1.7;margin:0 0 .5rem}
 blockquote{font-size:clamp(1.15rem,3vw,1.8rem);font-weight:300;line-height:1.9;border-inline-start:4px solid var(--roi);padding-inline-start:1.2rem;max-width:30em;margin:2rem 0}
 cite{display:block;margin-top:.6rem;font-size:.85rem;color:var(--mist);font-style:normal;direction:ltr;text-align:right}html[dir=ltr] cite{text-align:left}
 .chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
-.chips span{border:1px solid var(--mist);padding:.1rem .9rem;border-radius:99px;font-size:.88rem}
+.chips span{border:1px solid var(--mist);padding:.2rem .9rem;border-radius:99px;font-size:.88rem}
 .tw{overflow-x:auto;margin-top:1.4rem;border:1px solid var(--line);border-radius:12px;-webkit-overflow-scrolling:touch}
 table{border-collapse:collapse;width:100%;min-width:560px;font-size:.88rem;text-align:center}
 th,td{padding:.55rem .7rem;border-bottom:1px solid var(--line)}th{font-weight:700;background:var(--pale)}
@@ -98,7 +99,7 @@ td .num{direction:ltr}
 .bars .l{font-size:.72rem;text-align:center;line-height:1.5;margin-top:.3rem;overflow-wrap:anywhere}
 .flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:1.2rem;margin-top:1.6rem}
 .fs{display:flex;flex-direction:column;align-items:stretch;gap:.4rem;border:1px solid var(--line);border-radius:14px;padding:1rem;background:var(--card)}
-.fs h4{font-weight:700;color:var(--roi);margin-bottom:.2rem}
+.fs h4{font-weight:700;color:var(--roit);margin-bottom:.2rem}
 .bx{border:1.5px solid var(--deep);border-radius:10px;padding:.5rem .8rem;text-align:center;font-size:.9rem;line-height:1.8}
 .bx.y{background:#fff3c4;color:#4a3b00}.bx.g{background:#d9f2d2;color:#1d4a12}.bx.bl{background:#cfe0ff;color:#0d2a5c}
 .ar{text-align:center;color:var(--deep);line-height:1}
@@ -129,14 +130,19 @@ footer img{height:52px;width:auto}
 .pv{display:grid;gap:1.4rem}
 .cells{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));border:1px solid var(--line);border-radius:12px;overflow:hidden;counter-reset:n;margin-top:.6rem}
 .cells div{padding:.55rem .9rem;border-inline-end:1px solid var(--line);border-bottom:1px solid var(--line);font-size:.9rem;background:var(--card);margin:0 -1px -1px 0}
-.cells div::before{counter-increment:n;content:counter(n,persian) "  ";color:var(--roi);font-weight:700;font-size:.8rem}
+.cells div::before{counter-increment:n;content:counter(n,persian) "  ";color:var(--roit);font-weight:700;font-size:.8rem}
 html[lang=en] .cells div::before{content:counter(n) "  "}
-.colg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:1.2rem}
+.colg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr));gap:1.2rem .9rem}
 .colc{display:flex;flex-direction:column;gap:.5rem;text-align:center;font-weight:500;font-size:.9rem;line-height:1.7}
-.lgtile.ph span{font-weight:800;letter-spacing:.18em;color:var(--deep);font-size:1.25rem;direction:ltr}
+.lgtile.ph span{font-weight:800;letter-spacing:.18em;color:#4b6a7d;font-size:1.25rem;direction:ltr}
 .lgtile.ph{background:#fff}
 .cells{background:var(--card)}
 footer .cp{opacity:.75;font-size:.8rem}
+::selection{background:var(--mist);color:var(--ink)}
+a{text-underline-offset:.22em;text-decoration-thickness:1px}
+html{scrollbar-color:var(--mist) var(--ink)}
+.fig.solo{max-width:600px;margin-inline:auto}
+.gitai img{max-width:420px;margin-inline:auto;border-radius:14px}
 </style>
 </head>
 <body>
@@ -264,7 +270,7 @@ footer .cp{opacity:.75;font-size:.8rem}
 <tbody><tr><th dir="rtl"><t-x data-i="134">تعداد ضایعات افزوده‌شده پس از بازبینی، به ازای هر ۱۰۰ پستان</t-x></th><td><t-n>۱٫۲۱</t-n></td><td><t-n>۲٫۳۳</t-n></td><td><t-n>۱٫۳۶</t-n></td><td><t-n>۱٫۹۴</t-n></td></tr>
 <tr><th dir="rtl">p-value</th><td><t-n>۵٫۳E-۰۹</t-n></td><td><t-n>۷٫۰E-۰۵</t-n></td><td><t-n>۱٫۵E-۰۳</t-n></td><td><t-n>۱٫۱E-۰۴</t-n></td></tr></tbody></table></div>
 
-<figure class="fig"><img loading="lazy" src="img/viewer2.jpg" alt="نمونه ضایعه از دست‌رفته" data-at="alt" data-ai="5" width="1000" height="1009"><figcaption><t-x data-i="135">نمونه‌ای از ضایعه از دست‌رفته که با کمک هوش مصنوعی مشخص شده است.</t-x></figcaption></figure>
+<figure class="fig solo"><img loading="lazy" src="img/viewer2.jpg" alt="نمونه ضایعه از دست‌رفته" data-at="alt" data-ai="5" width="1000" height="1009"><figcaption><t-x data-i="135">نمونه‌ای از ضایعه از دست‌رفته که با کمک هوش مصنوعی مشخص شده است.</t-x></figcaption></figure>
 <div class="two" style="margin-top:3rem">
 <div><h3><t-x data-i="136">مطالعه آینده‌نگر: نرخ Recall</t-x></h3><p><t-x data-i="137">نرخ فراخوانی مجدد (RR) یکی از مهم‌ترین معیارها در غربالگری سرطان پستان است. در مطالعه ما، کمک هوش مصنوعی میانگین RR را در مرکز ما از ۳۵–۴۵٪ به ۲۰–۲۵٪ کاهش داد. این بهبود چشمگیر، پیگیری‌های غیرضروری و اضطراب بیماران را کم می‌کند.</t-x></p></div>
 <div><div class="bars" id="rc" style="max-width:360px;--h:180px"></div></div>
@@ -329,7 +335,7 @@ footer .cp{opacity:.75;font-size:.8rem}
 <p class="lead"><t-x data-i="180">فناوری هوش مصنوعی به سخت‌افزار اختصاصی با ویژگی‌های پردازشی ویژه نیاز دارد. بنابراین تیم کامامد با دانش روز، سامانه‌ای طراحی و ساخته است تا تجربه‌ای باکیفیت از استفاده از هوش مصنوعی فراهم کند. ویژگی‌های پایه: پلتفرم هوش مصنوعی و سامانه تولید گزارش.</t-x></p>
 <p class="lead"><t-x data-i="181">اولویت‌بندی بیماران بررسی‌شده بر اساس ریسک: چند مطالعه نشان می‌دهد دقت رادیولوژیست‌ها از ابتدا تا انتهای یک روز کاری ۶۰٪ کاهش می‌یابد. این اولویت‌بندی کمک می‌کند بیماران پرخطر زودتر و دقیق‌تر بررسی شوند.</t-x></p>
 </div>
-<figure class="fig" style="margin:0"><img loading="lazy" src="img/box.jpg" alt="جعبه هوشمند GITAI" data-at="alt" data-ai="10" width="1000" height="1007"></figure>
+<figure class="fig gitai" style="margin:0"><img loading="lazy" src="img/box.jpg" alt="جعبه هوشمند GITAI" data-at="alt" data-ai="10" width="682" height="999"></figure>
 </div>
 <div class="grid">
 <div class="card"><h3><t-x data-i="182">PACS داخلی</t-x></h3><t-x data-i="183">سامانه ارتباط و بایگانی تصاویر، داخل خود جعبه.</t-x></div>
@@ -379,7 +385,7 @@ const fa=n=>new Intl.NumberFormat(L=='en'?'en':'fa-IR',{maximumFractionDigits:1}
 const f2=v=>v.toLocaleString(L=='en'?'en':'fa-IR',{minimumFractionDigits:2,maximumFractionDigits:2});
 const tr=t=>L=='en'?t.replace('٪','%').replace('تا ','up to '):t;
 const lab=t=>L=='en'?String(t):DG(t).replace(/,/g,'٬');
-function rend(el){el.textContent=tr(el.dataset.pre||'')+fa(el._v||0)+tr(el.dataset.suf||'')}
+function rend(el){el.style.direction=(L=='fa'&&/[\u0600-\u06ff]/.test(el.dataset.pre||''))?'rtl':'';el.textContent=tr(el.dataset.pre||'')+fa(el._v||0)+tr(el.dataset.suf||'')}
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('on');e.target.querySelectorAll('[data-to]').forEach(count);io.unobserve(e.target)}),{threshold:.08});
 document.querySelectorAll('.rv').forEach(x=>io.observe(x));
 function count(el){const to=+el.dataset.to,t0=performance.now();
