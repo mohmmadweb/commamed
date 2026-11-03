@@ -10,7 +10,12 @@ import json, os, sys, urllib.request, urllib.error
 
 API = "https://api.cloudflare.com/client/v4"
 MANAGED_TYPES = {"A", "AAAA", "CNAME"}
-TOKEN = os.environ.get("CLOUDFLARE_API_TOKEN") or sys.exit("CLOUDFLARE_API_TOKEN is not set")
+TOKEN = os.environ.get("CLOUDFLARE_API_TOKEN")
+if not TOKEN:
+    if os.environ.get("GITHUB_ACTIONS"):
+        print("::warning::Repository secret CLOUDFLARE_API_TOKEN is not set; DNS was not changed.")
+        sys.exit(0)
+    sys.exit("CLOUDFLARE_API_TOKEN is not set")
 APPLY = "--apply" in sys.argv
 
 def cf(method, path, body=None):
