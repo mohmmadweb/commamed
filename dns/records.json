@@ -1,0 +1,23 @@
+{
+  "zone": "commamed.com",
+  "_note": "Only the names listed here are managed. For each name, its A/AAAA/CNAME records are made to match this file exactly; other names and record types (MX, TXT, ...) are never touched.",
+  "records": {
+    "commamed.com": [
+      {"type": "A", "content": "185.199.108.153"},
+      {"type": "A", "content": "185.199.109.153"},
+      {"type": "A", "content": "185.199.110.153"},
+      {"type": "A", "content": "185.199.111.153"},
+      {"type": "AAAA", "content": "2606:50c0:8000::153"},
+      {"type": "AAAA", "content": "2606:50c0:8001::153"},
+      {"type": "AAAA", "content": "2606:50c0:8002::153"},
+      {"type": "AAAA", "content": "2606:50c0:8003::153"}
+    ],
+    "www.commamed.com":        [{"type": "CNAME", "content": "mohmmadweb.github.io"}],
+    "demo.commamed.com":       [{"type": "A", "content": "213.233.184.183"}],
+    "docker.commamed.com":     [{"type": "A", "content": "213.233.184.183"}],
+    "registry.commamed.com":   [{"type": "A", "content": "213.233.184.183"}],
+    "service.commamed.com":    [{"type": "A", "content": "213.233.184.183"}],
+    "chest.commamed.com":      [{"type": "A", "content": "213.233.184.183"}],
+    "monitoring.commamed.com": [{"type": "A", "content": "213.233.184.183"}]
+  }
+}
